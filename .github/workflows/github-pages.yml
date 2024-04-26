@@ -37,7 +37,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Restore Next.js cache
-        uses: actions/cache/restore@v3
+        uses: actions/cache/restore@v4
         with:
           path: |
             .next/cache
@@ -50,7 +50,7 @@ jobs:
           NEXT_BASE_PATH: /nodejs.org
 
       - name: Save Next.js cache
-        uses: actions/cache/save@v3
+        uses: actions/cache/save@v4
         with:
           path: |
             .next/cache
