@@ -51,7 +51,7 @@ jobs:
         run: npm ci
 
       - name: Restore Next.js cache
-        uses: actions/cache/restore@v3
+        uses: actions/cache/restore@v4
         with:
           path: |
             .next/cache
@@ -63,7 +63,7 @@ jobs:
           NODE_OPTIONS: '--max_old_space_size=4096'
 
       - name: Save Next.js cache
-        uses: actions/cache/save@v3
+        uses: actions/cache/save@v4
         with:
           path: |
             .next/cache
